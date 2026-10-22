@@ -469,11 +469,22 @@
       </div>
     </section>
 
+    <section id="answer">
+      <div class="reveal">
+        <div class="kicker">The answer</div>
+        <h2>Don’t trust the agent. Check it.</h2>
+        <p class="lede">JunoClaw puts the verification outside the agent, so the work stops being a claim you take on faith.</p>
+      </div>
+      <div class="glass-card problem reveal">
+        <p><strong>Four independent witnesses</strong> bind what the agent did — provenance, semantics, bounds and controllability. The chain certifies the state that work produced. The bounds it was given are <em>enforced</em>, not asserted. And for a machine with a body, the attestation binds <strong>before the actuator moves</strong> — so anyone can check the work without trusting the worker.</p>
+      </div>
+    </section>
+
     <section id="chain">
       <div class="reveal">
         <div class="kicker">Under the hood</div>
         <h2>The chain is the verification layer.</h2>
-        <p class="lede">“Verifiable” is not a claim here — it is a measurement. This is what the G1 testnet is producing on real networks.</p>
+        <p class="lede">“Verifiable” is not a claim here — it is a measurement. This is what the G1 soak measured on real networks.</p>
       </div>
       <div class="loop reveal">
         <div class="glass-card step"><div class="n">01</div><h3>State-certifying finality, measured</h3><p>The G1 soak ran 48.2 h across independent operators: <strong>3.5 s median</strong> cadence on a fully distributed quorum, <strong>0.11 s</strong> in the best sustained hour once quorum paths were tight. Every block binds the executed state root.</p></div>
@@ -481,7 +492,7 @@
         <div class="glass-card step"><div class="n">03</div><h3>An on-chain light client</h3><p>An <strong>08-wasm light-client contract</strong> is deployed on <code>junoclaw-g1</code>, with both verification paths — positive <em>and</em> negative — passing at height <strong>508,995</strong>.</p></div>
         <div class="glass-card step"><div class="n">04</div><h3>Airdrop and governance, end to end</h3><p>The <strong>airdrop-claim</strong> flow and the <strong>governance</strong> flow are both exercised end-to-end on-chain — not mocked, not proposed.</p></div>
       </div>
-      <p class="note reveal">No other agent stack can point at that: a light client verifying post-quantum certificates on-chain, an airdrop you can claim, and governance you can run — while the chain finalizes in under two seconds. <!-- TODO(ravixo1): refresh with final numbers once the 48 h soak closes (~2026-10-13 20:00 UTC) --></p>
+      <p class="note reveal">No other agent stack can point at that: a light client verifying post-quantum certificates on-chain, an airdrop you can claim, and governance you can run — all measured across a 48.2 h soak with zero divergence.</p>
     </section>
 
     <section id="loop">
